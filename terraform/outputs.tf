@@ -10,10 +10,18 @@ output "subnet_public_id" {
   value = aws_subnet.public-subnet.id
 }
 
-output "subnet_public_id" {
+output "private_public_id" {
   value = aws_subnet.private-subnet.id
 }
 
-output "subnet_public_id" {
+output "ng_id" {
   value = aws_nat_gateway.nat.id
+}
+
+output "routebale-public" {
+  value = aws_route_table_association.rt1.id
+}
+
+output "routeable-private" {
+  value = aws_route_table_association.rtp1.id
 }
