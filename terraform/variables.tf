@@ -1,5 +1,5 @@
 locals {
-  prefix = "homework-tf"
+  prefix = "homework-terraform"
   env    = "dev"
   aws = {
     region = "us-east-1"

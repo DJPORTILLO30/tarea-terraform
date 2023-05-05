@@ -15,4 +15,7 @@ resource "aws_nat_gateway" "nat" {
     Environment = local.env
     Path        = "${basename(abspath(path.module))}/ng.tf"
   }
+
+   depends_on = [ aws_internet_gateway.this ]
+
 }
