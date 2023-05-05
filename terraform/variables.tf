@@ -2,7 +2,7 @@ locals {
   prefix = "homework-tf"
   env    = "dev"
   aws = {
-    region = "us-east-2"
+    region = "us-east-1"
   }
   vpc = {
     cidr    = "10.0.0.0/16"
